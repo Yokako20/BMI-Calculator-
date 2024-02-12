@@ -1,17 +1,17 @@
 W = float(input("whats your Weight "))
 H = float(input("whats your Height "))
-BMI = W/(H*H)
+BMI = float(round(W / (H * H), 2))
 
-if BMI <=18.5 :
-    print ("your underweight")
+if BMI <= 18.5:
+    print("your underweight")
 
-elif 18.6>= BMI <=24.9:
-    print ("your Healthy")
+elif 18.6 <= BMI <= 24.9:
+    print("your Healthy")
 
-elif 25>= BMI <=29.9:
-    print ("your overweight")
+elif 25 <= BMI <= 29.9:
+    print("your overweight")
 
-elif BMI >=30:
-    print ("your obese")
+elif BMI >= 30:
+    print("your obese")
 
-print ("your BMI is",BMI)
+print (BMI)
